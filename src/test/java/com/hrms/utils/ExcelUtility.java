@@ -63,7 +63,7 @@ public class ExcelUtility {
 	
 	@DataProvider (name="ExcelData")
 	public Object [][] excelData(){
-	return	ExcelUtility.excelIntoArray(Constants.EXCELDATA_FILEPATH, "Sheet1");
+	return	ExcelUtility.excelIntoArray(Constants.TESTDATA_FILEPATH, "Sheet1");
 		
 	}
 }
