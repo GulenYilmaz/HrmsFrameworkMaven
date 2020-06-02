@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-SuiteRegressionGroup" class="navigator-link">
-              <span class="suite-name border-skipped">SuiteRegressionGroup</span>
+            <a href="#" panel-name="suite-SuiteAddListener" class="navigator-link">
+              <span class="suite-name border-failed">SuiteAddListener</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-SuiteRegressionGroup" class="navigator-link ">
-                    <span>C:\Users\gulen\eclipse-workspace\HrmsFramework\GroupsAddTestCasestestng.xml</span>
+                  <a href="#" panel-name="test-xml-SuiteAddListener" class="navigator-link ">
+                    <span>C:\Users\gulen\eclipse-workspace\HrmsFramework\ListenerAddAllTestCasestestng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-SuiteRegressionGroup" class="navigator-link ">
+                  <a href="#" panel-name="testlist-SuiteAddListener" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-SuiteRegressionGroup" class="navigator-link ">
-                    <span>3 groups</span>
+                  <a href="#" panel-name="group-SuiteAddListener" class="navigator-link ">
+                    <span>4 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-SuiteRegressionGroup" class="navigator-link ">
+                  <a href="#" panel-name="times-SuiteAddListener" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-SuiteRegressionGroup" class="navigator-link ">
+                  <a href="#" panel-name="reporter-SuiteAddListener" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-SuiteRegressionGroup" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-SuiteAddListener" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-SuiteRegressionGroup" class="navigator-link ">
+                  <a href="#" panel-name="chronological-SuiteAddListener" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,40 +91,70 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,  1 skipped,  2 passed</span>
+                    <span class="method-stats">9 methods, 3 failed,   6 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-SuiteRegressionGroup" class="hide-methods skipped suite-SuiteRegressionGroup"> (hide)</a> <!-- hide-methods skipped suite-SuiteRegressionGroup -->
-                      <a href="#" panel-name="suite-SuiteRegressionGroup" class="show-methods skipped suite-SuiteRegressionGroup"> (show)</a> <!-- show-methods skipped suite-SuiteRegressionGroup -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SuiteAddListener" class="hide-methods failed suite-SuiteAddListener"> (hide)</a> <!-- hide-methods failed suite-SuiteAddListener -->
+                      <a href="#" panel-name="suite-SuiteAddListener" class="show-methods failed suite-SuiteAddListener"> (show)</a> <!-- show-methods failed suite-SuiteAddListener -->
                     </span>
-                    <div class="method-list-content skipped suite-SuiteRegressionGroup">
+                    <div class="method-list-content failed suite-SuiteAddListener">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-SuiteRegressionGroup" title="com.hrms.testcases.AddEmployeeTest" class="method navigator-link" hash-for-method="addEmployee">addEmployee</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteAddListener" title="com.hrms.testcases.AddEmployeeTest" class="method navigator-link" hash-for-method="addEmployee(Rajma, Capoora, raj123435345, AmirKhan_@123)">addEmployee(Rajma, Capoora, raj123435345, AmirKhan_@123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-SuiteRegressionGroup -->
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteAddListener" title="com.hrms.testcases.AddEmployeeTest" class="method navigator-link" hash-for-method="addEmployee(Rohani, Sakhi, rohani123, AmirKhan_@123)">addEmployee(Rohani, Sakhi, rohani123, AmirKhan_@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteAddListener" title="com.hrms.testcases.LoginTest" class="method navigator-link" hash-for-method="validAdminLogin">validAdminLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SuiteAddListener -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-SuiteRegressionGroup" class="hide-methods passed suite-SuiteRegressionGroup"> (hide)</a> <!-- hide-methods passed suite-SuiteRegressionGroup -->
-                      <a href="#" panel-name="suite-SuiteRegressionGroup" class="show-methods passed suite-SuiteRegressionGroup"> (show)</a> <!-- show-methods passed suite-SuiteRegressionGroup -->
+                      <a href="#" panel-name="suite-SuiteAddListener" class="hide-methods passed suite-SuiteAddListener"> (hide)</a> <!-- hide-methods passed suite-SuiteAddListener -->
+                      <a href="#" panel-name="suite-SuiteAddListener" class="show-methods passed suite-SuiteAddListener"> (show)</a> <!-- show-methods passed suite-SuiteAddListener -->
                     </span>
-                    <div class="method-list-content passed suite-SuiteRegressionGroup">
+                    <div class="method-list-content passed suite-SuiteAddListener">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SuiteRegressionGroup" title="com.hrms.testcases.LoginTest" class="method navigator-link" hash-for-method="emptyUsernameLogin">emptyUsernameLogin</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SuiteAddListener" title="com.hrms.testcases.AddEmployeeTest" class="method navigator-link" hash-for-method="addEmployee(John, Smith, john123, AmirKhan_@123)">addEmployee(John, Smith, john123, AmirKhan_@123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SuiteRegressionGroup" title="com.hrms.testcases.LoginTest" class="method navigator-link" hash-for-method="invalidPasswordLogin">invalidPasswordLogin</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SuiteAddListener" title="com.hrms.testcases.AddEmployeeTest" class="method navigator-link" hash-for-method="addEmployee(Mary, Ann, mary123, AmirKhan_@123)">addEmployee(Mary, Ann, mary123, AmirKhan_@123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-SuiteRegressionGroup -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteAddListener" title="com.hrms.testcases.AddEmployeeTest" class="method navigator-link" hash-for-method="addEmployee(Ali, Tarlaci, ali123, AmirKhan_@123)">addEmployee(Ali, Tarlaci, ali123, AmirKhan_@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteAddListener" title="com.hrms.testcases.LoginTest" class="method navigator-link" hash-for-method="emptyUsernameLogin">emptyUsernameLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteAddListener" title="com.hrms.testcases.LoginTest" class="method navigator-link" hash-for-method="invalidPasswordLogin">invalidPasswordLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteAddListener" title="com.hrms.testcases.LoginTest" class="method navigator-link" hash-for-method="timeStamp">timeStamp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-SuiteAddListener -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -135,32 +165,124 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-SuiteRegressionGroup" class="panel SuiteRegressionGroup">
-          <div class="suite-SuiteRegressionGroup-class-skipped">
+        <div panel-name="suite-SuiteAddListener" class="panel SuiteAddListener">
+          <div class="suite-SuiteAddListener-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">com.hrms.testcases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validAdminLogin">
+                  </a> <!-- validAdminLogin -->
+                  <span class="method-name">validAdminLogin</span>
+                  <div class="stack-trace">java.lang.AssertionError: Admin is NOT Logged in expected [Welcome Admins] but found [Welcome Admin]
+	at com.hrms.testcases.LoginTest.validAdminLogin(LoginTest.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteAddListener-class-failed -->
+          <div class="suite-SuiteAddListener-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">com.hrms.testcases.AddEmployeeTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addEmployee">
-                  </a> <!-- addEmployee -->
+                  <a name="addEmployee(Rajma, Capoora, raj123435345, AmirKhan_@123)">
+                  </a> <!-- addEmployee(Rajma, Capoora, raj123435345, AmirKhan_@123) -->
                   <span class="method-name">addEmployee</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NullPointerException
+                  <span class="parameters">(Rajma, Capoora, raj123435345, AmirKhan_@123)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@id=&apos;pdMainContainer&apos;]/div[1]/h1&apos; (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.hrms.utils.CommonMethods.waitForVisibility(CommonMethods.java:213)
+	at com.hrms.testcases.AddEmployeeTest.addEmployee(AddEmployeeTest.java:44)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
-Caused by: java.lang.NullPointerException
-	at com.hrms.utils.ExcelUtility.rowCount(ExcelUtility.java:29)
-	at com.hrms.utils.ExcelUtility.excelIntoArray(ExcelUtility.java:45)
-	at com.hrms.testcases.AddEmployeeTest.getData2(AddEmployeeTest.java:62)
-	... 25 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;pdMainContainer&apos;]/div[1]/h1&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-F8PE7CG&apos;, ip: &apos;192.168.0.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\gulen\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49546}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: acd68583f26829d3df95296393f9b797
+*** Element info: {Using=xpath, value=//div[@id=&apos;pdMainContainer&apos;]/div[1]/h1}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 30 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployee(Rohani, Sakhi, rohani123, AmirKhan_@123)">
+                  </a> <!-- addEmployee(Rohani, Sakhi, rohani123, AmirKhan_@123) -->
+                  <span class="method-name">addEmployee</span>
+                  <span class="parameters">(Rohani, Sakhi, rohani123, AmirKhan_@123)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@id=&apos;pdMainContainer&apos;]/div[1]/h1&apos; (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.hrms.utils.CommonMethods.waitForVisibility(CommonMethods.java:213)
+	at com.hrms.testcases.AddEmployeeTest.addEmployee(AddEmployeeTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;pdMainContainer&apos;]/div[1]/h1&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-F8PE7CG&apos;, ip: &apos;192.168.0.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\gulen\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49628}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 65bd87deca89c0d89b656a9402492c50
+*** Element info: {Using=xpath, value=//div[@id=&apos;pdMainContainer&apos;]/div[1]/h1}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 30 more
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SuiteRegressionGroup-class-skipped -->
-          <div class="suite-SuiteRegressionGroup-class-passed">
+          </div> <!-- suite-SuiteAddListener-class-failed -->
+          <div class="suite-SuiteAddListener-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.hrms.testcases.LoginTest</span>
@@ -180,54 +302,85 @@ Caused by: java.lang.NullPointerException
                   <span class="method-name">invalidPasswordLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="timeStamp">
+                  </a> <!-- timeStamp -->
+                  <span class="method-name">timeStamp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SuiteRegressionGroup-class-passed -->
-        </div> <!-- panel SuiteRegressionGroup -->
-        <div panel-name="test-xml-SuiteRegressionGroup" class="panel">
+          </div> <!-- suite-SuiteAddListener-class-passed -->
+          <div class="suite-SuiteAddListener-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.hrms.testcases.AddEmployeeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployee(John, Smith, john123, AmirKhan_@123)">
+                  </a> <!-- addEmployee(John, Smith, john123, AmirKhan_@123) -->
+                  <span class="method-name">addEmployee</span>
+                  <span class="parameters">(John, Smith, john123, AmirKhan_@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployee(Mary, Ann, mary123, AmirKhan_@123)">
+                  </a> <!-- addEmployee(Mary, Ann, mary123, AmirKhan_@123) -->
+                  <span class="method-name">addEmployee</span>
+                  <span class="parameters">(Mary, Ann, mary123, AmirKhan_@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployee(Ali, Tarlaci, ali123, AmirKhan_@123)">
+                  </a> <!-- addEmployee(Ali, Tarlaci, ali123, AmirKhan_@123) -->
+                  <span class="method-name">addEmployee</span>
+                  <span class="parameters">(Ali, Tarlaci, ali123, AmirKhan_@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteAddListener-class-passed -->
+        </div> <!-- panel SuiteAddListener -->
+        <div panel-name="test-xml-SuiteAddListener" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\gulen\eclipse-workspace\HrmsFramework\GroupsAddTestCasestestng.xml</span>
+            <span class="header-content">C:\Users\gulen\eclipse-workspace\HrmsFramework\ListenerAddAllTestCasestestng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;SuiteRegressionGroup&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite name=&quot;SuiteAddListener&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.hrms.testbase.Listener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;TestResgressionGoup&quot;&gt;
-    &lt;groups&gt;
-      &lt;run&gt;
-        &lt;include name=&quot;regression&quot;/&gt;
-      &lt;/run&gt;
-    &lt;/groups&gt;
-    &lt;packages&gt;
-      &lt;package name=&quot;com.hrms.testcases&quot;/&gt;
-    &lt;/packages&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TestAddListener&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.hrms.testcases.AddEmployeeTest&quot;/&gt;
       &lt;class name=&quot;com.hrms.testcases.LoginTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TestResgressionGoup --&gt;
-&lt;/suite&gt; &lt;!-- SuiteRegressionGroup --&gt;
+  &lt;/test&gt; &lt;!-- TestAddListener --&gt;
+&lt;/suite&gt; &lt;!-- SuiteAddListener --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-SuiteRegressionGroup" class="panel">
+        <div panel-name="testlist-SuiteAddListener" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for SuiteRegressionGroup</span>
+            <span class="header-content">Tests for SuiteAddListener</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TestResgressionGoup (2 classes)</span>
+                <span class="test-name">TestAddListener (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-SuiteRegressionGroup" class="panel">
+        <div panel-name="group-SuiteAddListener" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for SuiteRegressionGroup</span>
+            <span class="header-content">Groups for SuiteAddListener</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
@@ -262,55 +415,87 @@ Caused by: java.lang.NullPointerException
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">validAdminLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-SuiteRegressionGroup" class="panel">
+        <div panel-name="times-SuiteAddListener" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for SuiteRegressionGroup</span>
+            <span class="header-content">Times for SuiteAddListener</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_SuiteRegressionGroup');
-function tableData_SuiteRegressionGroup() {
+suiteTableInitFunctions.push('tableData_SuiteAddListener');
+function tableData_SuiteAddListener() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'invalidPasswordLogin')
-data.setCell(0, 2, 'com.hrms.testcases.LoginTest')
-data.setCell(0, 3, 1292);
+data.setCell(0, 1, 'addEmployee')
+data.setCell(0, 2, 'com.hrms.testcases.AddEmployeeTest')
+data.setCell(0, 3, 55973);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'emptyUsernameLogin')
-data.setCell(1, 2, 'com.hrms.testcases.LoginTest')
-data.setCell(1, 3, 264);
+data.setCell(1, 1, 'addEmployee')
+data.setCell(1, 2, 'com.hrms.testcases.AddEmployeeTest')
+data.setCell(1, 3, 55910);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'addEmployee')
 data.setCell(2, 2, 'com.hrms.testcases.AddEmployeeTest')
-data.setCell(2, 3, 0);
-window.suiteTableData['SuiteRegressionGroup']= { tableData: data, tableDiv: 'times-div-SuiteRegressionGroup'}
+data.setCell(2, 3, 11707);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'addEmployee')
+data.setCell(3, 2, 'com.hrms.testcases.AddEmployeeTest')
+data.setCell(3, 3, 11440);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addEmployee')
+data.setCell(4, 2, 'com.hrms.testcases.AddEmployeeTest')
+data.setCell(4, 3, 11331);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validAdminLogin')
+data.setCell(5, 2, 'com.hrms.testcases.LoginTest')
+data.setCell(5, 3, 2422);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'invalidPasswordLogin')
+data.setCell(6, 2, 'com.hrms.testcases.LoginTest')
+data.setCell(6, 3, 1002);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'emptyUsernameLogin')
+data.setCell(7, 2, 'com.hrms.testcases.LoginTest')
+data.setCell(7, 3, 198);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'timeStamp')
+data.setCell(8, 2, 'com.hrms.testcases.LoginTest')
+data.setCell(8, 3, 1);
+window.suiteTableData['SuiteAddListener']= { tableData: data, tableDiv: 'times-div-SuiteAddListener'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
-              <div id="times-div-SuiteRegressionGroup">
-              </div> <!-- times-div-SuiteRegressionGroup -->
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-SuiteAddListener">
+              </div> <!-- times-div-SuiteAddListener -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-SuiteRegressionGroup" class="panel">
+        <div panel-name="reporter-SuiteAddListener" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for SuiteRegressionGroup</span>
+            <span class="header-content">Reporter output for SuiteAddListener</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-SuiteRegressionGroup" class="panel">
+        <div panel-name="ignored-methods-SuiteAddListener" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -320,13 +505,11 @@ return data;
                 <br/>
                 <span class="ignored-method-name">writeReport</span>
                 <br/>
-                <span class="ignored-method-name">validAdminLogin</span>
-                <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-SuiteRegressionGroup" class="panel">
+        <div panel-name="chronological-SuiteAddListener" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -337,39 +520,129 @@ return data;
                 <span class="method-name">generateReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">141 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addEmployee(Rajma, Capoora, raj123435345, AmirKhan_@123)</span>
+                <span class="method-start">4590 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">60884 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">61497 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addEmployee(John, Smith, john123, AmirKhan_@123)</span>
+                <span class="method-start">66444 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">78443 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">79053 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addEmployee(Mary, Ann, mary123, AmirKhan_@123)</span>
+                <span class="method-start">83347 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">95082 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">95691 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addEmployee(Rohani, Sakhi, rohani123, AmirKhan_@123)</span>
+                <span class="method-start">99690 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">155930 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">156538 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addEmployee(Ali, Tarlaci, ali123, AmirKhan_@123)</span>
+                <span class="method-start">161185 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">172832 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.hrms.testcases.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">626 ms</span>
+                <span class="method-start">173443 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyUsernameLogin</span>
-                <span class="method-start">8715 ms</span>
+                <span class="method-start">177507 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8981 ms</span>
+                <span class="method-start">178017 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">9587 ms</span>
+                <span class="method-start">178609 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidPasswordLogin</span>
-                <span class="method-start">14674 ms</span>
+                <span class="method-start">182989 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">15967 ms</span>
+                <span class="method-start">184302 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">184906 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">timeStamp</span>
+                <span class="method-start">188858 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">189180 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">189765 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validAdminLogin</span>
+                <span class="method-start">193735 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">197044 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.hrms.testcases.AddEmployeeTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">writeReport</span>
-                <span class="method-start">16582 ms</span>
+                <span class="method-start">197653 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

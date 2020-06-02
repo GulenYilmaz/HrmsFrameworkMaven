@@ -14,6 +14,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.hrms.utils.ConfigsReader;
@@ -24,9 +25,10 @@ public class BaseClass {
 	public static WebDriver driver;
 	public static ExtentHtmlReporter htmlReport;
 	public static ExtentReports report;
+	public static ExtentTest test;
 
-	@BeforeTest(alwaysRun = true)// to make this BeforeTest run before every xml.file
-	public void generateReport() {
+	@BeforeTest(alwaysRun = true)
+	public void generateReport() { 
 
 		ConfigsReader.readProperties(Constants.CONFIGURATION_FILEPATH);
 
@@ -78,5 +80,4 @@ public class BaseClass {
 		if (driver != null) {
 			driver.quit();
 		}
-	}
-}	
+	}}
