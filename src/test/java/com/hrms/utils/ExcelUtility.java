@@ -45,13 +45,17 @@ public class ExcelUtility {
 		int rows = rowCount();
 		int cols = colsCount(0);
 
-		Object[][] data = new Object[rows - 1][cols];
+		
+		
+		Object[][] data = new Object[rows - 1][cols];// but we need zero rows to restore our data to 2 dimensional array
 
 		// iterating rows
-		for (int i = 1; i < rows; i++) {
+		for (int i = 1; i < rows; i++) {//we do not need keys or headers //eliminate header
 
 			// iterating cols
 			for (int j = 0; j < cols; j++) {
+				
+				//retrieving value from excel by specified row and colums
 				data[i - 1][j] = cellData(i, j);
 			}
 		}

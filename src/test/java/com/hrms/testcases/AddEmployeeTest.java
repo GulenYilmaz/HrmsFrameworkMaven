@@ -12,7 +12,7 @@ import com.hrms.utils.ExcelUtility;
 
 public class AddEmployeeTest extends CommonMethods {
 
-	@Test(dataProvider = "userData", groups = { "homework", "addEmp", "regression" })
+	@Test(dataProvider = "userDataFromExcel", groups = { "homework", "addEmp", "regression" })
 	public void addEmployee(String firstName, String lastName, String username, String password) {
 		// System.out.println(firstName + " " + lastName + " " + username + " " +
 		// password);

@@ -23,11 +23,20 @@ import com.hrms.utils.Constants;
 public class BaseClass {
 
 	public static WebDriver driver;
+	
+	
+	
 	public static ExtentHtmlReporter htmlReport;
 	public static ExtentReports report;
+	
+	
 	public static ExtentTest test;
 
+	
+	
 	@BeforeTest(alwaysRun = true)
+	
+	
 	public void generateReport() { 
 
 		ConfigsReader.readProperties(Constants.CONFIGURATION_FILEPATH);
@@ -39,14 +48,22 @@ public class BaseClass {
 
 		report = new ExtentReports();
 		report.attachReporter(htmlReport);
+//		report.setSystemInfo("QA Engineer", Constants.USER_NAME);
+//		report.setSystemInfo("Environment", "Test");
+//		report.setSystemInfo("OS Name", Constants.OS_NAME);
+//		report.setSystemInfo("Browser", ConfigsReader.getProperty("browser"));
 	}
 
 	@AfterTest(alwaysRun = true)
+	
+	
 	public void writeReport() {
 		report.flush();
 	}
 
 	@BeforeMethod(alwaysRun = true) // to make this method run before every @Test method
+	
+	
 	public static WebDriver setUp() {
 
 		System.setProperty(ChromeDriverService.CHROME_DRIVER_LOG_PROPERTY, "true");
@@ -76,6 +93,8 @@ public class BaseClass {
 	}
 
 	@AfterMethod(alwaysRun = true) // to make this method to run after every @Test method
+	
+	
 	public static void tearDown() {
 		if (driver != null) {
 			driver.quit();
