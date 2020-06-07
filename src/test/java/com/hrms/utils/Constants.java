@@ -32,9 +32,9 @@ public class Constants {
 	
 	
 	public static void main(String[] args) {
-		System.out.println(TESTDATA_FILEPATH);//C:\Users\gulen\eclipse-workspace\HrmsFramework\src\test\resources\testdata\HrmsTestData.xlsx
-		System.out.println(OS_NAME);//Windows 10
-		System.out.println(USER_NAME);//gulen
+System.out.println(TESTDATA_FILEPATH);//C:\Users\gulen\eclipse-workspace\HrmsTestNGFramework\src\test\resources\testdata\HrmsTestData.xlsx
+System.out.println(OS_NAME);//Windows 10
+System.out.println(USER_NAME);//gulen
 		
 		
 	}

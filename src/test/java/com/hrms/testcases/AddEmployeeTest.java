@@ -1,6 +1,8 @@
 package com.hrms.testcases;
 
 import org.testng.annotations.Test;
+
+
 import org.yaml.snakeyaml.scanner.Constant;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -59,6 +61,6 @@ public class AddEmployeeTest extends CommonMethods {
 
 	@DataProvider(name = "userDataFromExcel")
 	public Object[][] getData2() {
-		return ExcelUtility.excelIntoArray(Constants.TESTDATA_FILEPATH, "EmployeeLoginCredentials");
+		return ExcelUtility.excelIntoArray(Constants.TESTDATA_FILEPATH, "Sheet1");
 	}
 }

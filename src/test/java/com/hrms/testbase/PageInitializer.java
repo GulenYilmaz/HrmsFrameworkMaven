@@ -5,6 +5,8 @@ import com.hrms.pages.DashboardPageElements;
 import com.hrms.pages.LoginPageElements;
 import com.hrms.pages.PersonalDetailsPageElements;
 
+import Homework__Test__Cases.EmployeeReportsPageElements;
+
 //initializes all pages class and stores references in static varibales
 //that will called/used in test classes
 public class PageInitializer extends BaseClass{
@@ -13,6 +15,7 @@ public class PageInitializer extends BaseClass{
 	public static AddEmployeePageElements addEmp;
 	public static DashboardPageElements dashboard;
 	public static PersonalDetailsPageElements pdetails;
+	public static EmployeeReportsPageElements empReports;
 	
 	public static void initialize() {
 		
@@ -20,5 +23,6 @@ public class PageInitializer extends BaseClass{
 		dashboard=new DashboardPageElements();
 		addEmp=new AddEmployeePageElements();
 		pdetails=new PersonalDetailsPageElements();
+		empReports = new EmployeeReportsPageElements();
 	}
 }

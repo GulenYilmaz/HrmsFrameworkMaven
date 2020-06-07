@@ -17,8 +17,8 @@
 		</groups>
 
 
-		<classes>
-			<class name="com.hrms.testcases.LoginTest" />
-		</classes>
+		<packages>
+			<package name="com.hrms.testcases" />
+		</packages>
 	</test>
 </suite> 

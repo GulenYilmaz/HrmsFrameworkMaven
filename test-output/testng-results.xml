@@ -1,81 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-02T21:10:22 EDT" name="Default suite" finished-at="2020-06-02T21:10:22 EDT" duration-ms="704">
+  <suite started-at="2020-06-05T19:34:18 EDT" name="Suite Employee Reports Page" finished-at="2020-06-05T19:35:09 EDT" duration-ms="51314">
     <groups>
-      <group name="addEmp">
-        <method signature="AddEmployeeTest.addEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hrms.testcases.AddEmployeeTest@6e0dec4a]" name="addEmployee" class="com.hrms.testcases.AddEmployeeTest"/>
-      </group> <!-- addEmp -->
-      <group name="homework">
-        <method signature="AddEmployeeTest.addEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hrms.testcases.AddEmployeeTest@6e0dec4a]" name="addEmployee" class="com.hrms.testcases.AddEmployeeTest"/>
-      </group> <!-- homework -->
-      <group name="regression">
-        <method signature="AddEmployeeTest.addEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hrms.testcases.AddEmployeeTest@6e0dec4a]" name="addEmployee" class="com.hrms.testcases.AddEmployeeTest"/>
-      </group> <!-- regression -->
     </groups>
-    <test started-at="2020-06-02T21:10:22 EDT" name="Default test" finished-at="2020-06-02T21:10:22 EDT" duration-ms="704">
-      <class name="com.hrms.testcases.AddEmployeeTest">
-        <test-method is-config="true" signature="generateReport()[pri:0, instance:com.hrms.testcases.AddEmployeeTest@6e0dec4a]" started-at="2020-06-02T21:10:22 EDT" name="generateReport" finished-at="2020-06-02T21:10:22 EDT" duration-ms="142" status="PASS">
+    <test started-at="2020-06-05T19:34:18 EDT" name="Test Employee Reports Page" finished-at="2020-06-05T19:35:09 EDT" duration-ms="51314">
+      <class name="Homework__Test__Cases.EmployeeReportsTest">
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:Homework__Test__Cases.EmployeeReportsTest@96def03]" started-at="2020-06-05T19:34:18 EDT" name="generateReport" finished-at="2020-06-05T19:34:18 EDT" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method signature="addEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hrms.testcases.AddEmployeeTest@6e0dec4a]" started-at="2020-06-02T21:10:22 EDT" name="addEmployee" data-provider="userDataFromExcel" finished-at="2020-06-02T21:10:22 EDT" duration-ms="0" status="SKIP">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.lang.NullPointerException]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:51)
-at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:147)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:801)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:744)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:783)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NullPointerException
-at com.hrms.utils.ExcelUtility.rowCount(ExcelUtility.java:29)
-at com.hrms.utils.ExcelUtility.excelIntoArray(ExcelUtility.java:45)
-at com.hrms.testcases.AddEmployeeTest.getData2(AddEmployeeTest.java:62)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:78)
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:47)
-... 25 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Homework__Test__Cases.EmployeeReportsTest@96def03]" started-at="2020-06-05T19:34:18 EDT" name="setUp" finished-at="2020-06-05T19:34:23 EDT" duration-ms="4702" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addEmployee -->
-        <test-method is-config="true" signature="writeReport()[pri:0, instance:com.hrms.testcases.AddEmployeeTest@6e0dec4a]" started-at="2020-06-02T21:10:22 EDT" name="writeReport" finished-at="2020-06-02T21:10:22 EDT" duration-ms="2" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="DefiningReport(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Homework__Test__Cases.EmployeeReportsTest@96def03]" started-at="2020-06-05T19:34:23 EDT" name="DefiningReport" data-provider="getDataExcel" finished-at="2020-06-05T19:34:34 EDT" duration-ms="11152" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EmployeeContact]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Employee Name]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Past Employees Only]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Contact Details]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Address]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DefiningReport -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Homework__Test__Cases.EmployeeReportsTest@96def03]" started-at="2020-06-05T19:34:35 EDT" name="tearDown" finished-at="2020-06-05T19:34:35 EDT" duration-ms="622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Homework__Test__Cases.EmployeeReportsTest@96def03]" started-at="2020-06-05T19:34:35 EDT" name="setUp" finished-at="2020-06-05T19:34:39 EDT" duration-ms="4043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="DefiningReport(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Homework__Test__Cases.EmployeeReportsTest@96def03]" started-at="2020-06-05T19:34:39 EDT" name="DefiningReport" data-provider="getDataExcel" finished-at="2020-06-05T19:34:50 EDT" duration-ms="11015" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Salary]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pay Grade]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Past Employees Only]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Salary]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Pay Grade]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DefiningReport -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Homework__Test__Cases.EmployeeReportsTest@96def03]" started-at="2020-06-05T19:34:51 EDT" name="tearDown" finished-at="2020-06-05T19:34:51 EDT" duration-ms="616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Homework__Test__Cases.EmployeeReportsTest@96def03]" started-at="2020-06-05T19:34:51 EDT" name="setUp" finished-at="2020-06-05T19:34:55 EDT" duration-ms="4009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="DefiningReport(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Homework__Test__Cases.EmployeeReportsTest@96def03]" started-at="2020-06-05T19:34:55 EDT" name="DefiningReport" data-provider="getDataExcel" finished-at="2020-06-05T19:35:07 EDT" duration-ms="11968" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Education Credentials]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Education]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Current Employees Only]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Education Credentials]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Level]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DefiningReport -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Homework__Test__Cases.EmployeeReportsTest@96def03]" started-at="2020-06-05T19:35:08 EDT" name="tearDown" finished-at="2020-06-05T19:35:09 EDT" duration-ms="611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="writeReport()[pri:0, instance:Homework__Test__Cases.EmployeeReportsTest@96def03]" started-at="2020-06-05T19:35:09 EDT" name="writeReport" finished-at="2020-06-05T19:35:09 EDT" duration-ms="226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- writeReport -->
-      </class> <!-- com.hrms.testcases.AddEmployeeTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Homework__Test__Cases.EmployeeReportsTest -->
+    </test> <!-- Test Employee Reports Page -->
+  </suite> <!-- Suite Employee Reports Page -->
 </testng-results>
